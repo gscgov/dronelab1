@@ -1,6 +1,6 @@
 # Drone Lab 1 Instructions
 
-## https://gscgov.github.io/dronelab1/
+## https://ielgov.github.io/dronelab1/
 
 
 
