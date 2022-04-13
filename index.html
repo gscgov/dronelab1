@@ -1,7 +1,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
-  <title>GSC Drone Lab 1 - Instructions</title>
+  <title>IEL Drone Lab 1 - Instructions</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -10,7 +10,7 @@
  <body>
   <a id="top"></a>
   <div id="navbar">
-   <span class="start" onClick="toggleOptions()">GSC Drone Lab 1</span>
+   <span class="start" onClick="toggleOptions()">IEL Drone Lab 1</span>
    <span id="nb" class="item" onClick="moveTo('begin')" style="background-color: #217b6d;">Begin Lab</span>
    <span id="np" class="item" onClick="moveTo('prelim')" >Preliminary Steps</span>
    <span id="n1" class="item" onClick="moveTo('s1')">Step 1</span>
@@ -23,10 +23,7 @@
         <table>
             <tbody>
                 <tr>
-                    <td><a class="link" href="https://ibm.enterprise.slack.com/?redir=%2Fr-t75413889568%3Fredir%3D%252Fgantry%252Fauth%253Fapp%253Dclient%2526lc%253D1592853172%2526return_to%253D%25252Fclient%25252FT27C5S5GQ%25252FC015DBZ9YH0%2526teams%253D#/" target="_blank"><span class="out itemlink"> <img src="./img/slack.png" />&nbsp;&nbsp;Lab Slack channel - post questions & more ⇒</span></a></td>
-                </tr>
-                <tr>
-                    <td><a class="link" href="mailto:gscgov@us.ibm.com?cc=edgingtn@us.ibm.com, sjchrist@us.ibm.com, mariados@us.ibm.com&subject=Requesting%20Support%20-%20IEL%20Drone%20Lab2%20(Satellite)&body=(Your%20message%20here)"><span class="out itemlink">Not an IBMer? Email gscgov@us.ibm.com for support</span></a></td>
+                    <td><a class="link" href="mailto:gscgov@us.ibm.com?cc=edgingtn@us.ibm.com, sjchrist@us.ibm.com, mariados@us.ibm.com&subject=Requesting%20Support%20-%20IEL%20Drone%20Lab2%20(Satellite)&body=(Your%20message%20here)"><span class="out itemlink">Email gscgov@us.ibm.com for support</span></a></td>
                 </tr>
             </tbody>
         </table>
@@ -38,7 +35,7 @@
    <div id="beginlab" class="main" style="display:block;">
     <div class="block">
      <div class="leftHalf">
-      <h1>GSC Drone Lab 1: Introduction</h1>
+      <h1>IEL Drone Lab 1: Introduction</h1>
       <span class="readTime UPDATE">&#9200; Length: 3 minutes, 35 seconds (~730 words)</span>
       <p>
        This lab is the <b>first</b> in a series of labs designed to demonstrate how several IBM technologies, such as <span class="blue">OpenShift (Kubernetes), Hybrid Multicloud, and CP4i (API Connect)</span> can be utilized along with
@@ -144,59 +141,15 @@
    </div>
    <!--- Preliminary Steps -->
    <div id="prelim" class="main">
-        <div class="block">
-        <div class="leftHalf">
-        <div class="slackInfo">
-        <h2>
-            <a name="slack">Slack Communication</a>
-        </h2>
-
-        <p>
-            Communication (such as feedback, questions, comments, and help) is done through a Slack channel dedicated to this lab. Before you begin the lab, it is encouraged that you confirm you have access to the channel
-            <span class="purple">#2020gsc_ibmcloudsandbox_dronelab1</span>, located in the <b>IBM Sales</b> workspace.
-        </p>
-        <p>
-            Go to
-            <span class="blue">
-            <a
-            href="https://ibm.enterprise.slack.com/?redir=%2Fr-t75413889568%3Fredir%3D%252Fgantry%252Fauth%253Fapp%253Dclient%2526lc%253D1592853172%2526return_to%253D%25252Fclient%25252FT27C5S5GQ%25252FC015DBZ9YH0%2526teams%253D#/"
-            target="_blank"
-            >
-            https://app.slack.com/client/T27C5S5GQ/C015DBZ9YH0
-            </a>
-            </span>
-            to verify you have access to this channel.
-        </p>
-        </div>
-        </div>
-        <div class="qHalf">
-        <div class="question">
-        👈 When I click that link, I do not see a Slack channel.
-        <span class="readmore">[Click to Read Solution]</span>
-        </div>
-        <div class="answer">
-        You will encounter issues if you do not have access to the
-        <b>IBM Sales workspace</b>. Go to <a href="https://ibm-sales.slack.com" target="_blank">https://ibm-sales.slack.com</a> - if you do not see a Slack channel at all, you may need to go
-        <a href="https://ibm.enterprise.slack.com/signin/find-workspaces" target="_blank">https://ibm.enterprise.slack.com/signin/find-workspaces</a> and search for <b>“IBM Sales”</b>. This workspace has over 34,000 members and has a
-        handshake icon with a blue background. Join this workspace and you will be granted access.
-        <b>You may need to scroll down several times to find it.</b>
-        <br />
-        Once you click to join the IBM Sales workspace, try visiting <a href="https://app.slack.com/client/T27C5S5GQ/C015DBZ9YH0" target="_blank">https://app.slack.com/client/T27C5S5GQ/C015DBZ9YH0</a> again.
-        </div>
-        </div>
-        </div>
-
-
-
-
 
         <div id="newPrelim">
             <div id="preliminary">
                 <h1> Lab Preliminary Steps </h1>
 
-                <b>What is your IBM email?</b> (You must provide this information before starting the lab.)<br /><br />
-                <input id="labnameVal" /> @ <input id="emailVal" placeholder="us.ibm.com" />
-                <input id="done" type="button" value="submit" onclick="setLabName()" />
+                <b>What is your <span class="magenta">lab name</span> that was provided in your onboarding email?</b> <i>(You must provide this information before starting the lab.)</i><br /><br />
+                <input id="labnameVal" />
+                <input id="done" type="button" value="submit" onclick="setLabName()" /><br/><br/>
+                If you did <b>NOT</b> receive an onboarding email after requesting access, or your lab name was not in the onboarding email, please email gscgov@us.ibm.com.<br/><br/>
                 <div id="confirmText"></div>
             </div>
 
@@ -220,10 +173,10 @@
                         </div>
                         </div>
                         <div class="tab active" onClick="tabsDisplayURL('instructions')">
-                        <div class="tab__label">GSC Drone Lab 1 - Instructions </div>
+                        <div class="tab__label">IEL Drone Lab 1 - Instructions </div>
                         </div>
                         <div class="tab" onClick="tabsDisplayURL('github')">
-                        <div class="tab__label">GSC-2020-lab-1/<span class="labnameHere UPDATE">YourLabName</span>-2020-lab: Repo for the GSC 2020 Lab 1 [GitHub]</div>
+                        <div class="tab__label">Repo for the IEL 2020 Lab 1 [GitHub]</div>
                         </div>
                         <div class="tab" onClick="tabsDisplayURL('cloud')">
                         <div class="tab__label">IBM Cloud [later, cluster overview]</div>
@@ -237,7 +190,7 @@
                     </div>
                     <div class="tabs__display-area">
                         <div id="tabs_url">
-                        <a href="https://pages.github.ibm.com/dallas-gsc-gov/dronelab/" target="_blank">https://pages.github.ibm.com/dallas-gsc-gov/dronelab/</a>
+                        <a href="https://ielgov.github.io/dronelab1/" target="_blank">https://ielgov.github.io/dronelab1/</a>
                         </div>
                         <div id="tabs_description">
                         - This current tab.<br/>
@@ -252,22 +205,12 @@
 
                 <div class="browserExampleSecond">Does your window match the mock window above with the 3 tabs? <br/> Besides this instructions tab being the left-most tab, the order of the tabs is <b>not important</b>. These 3 tabs will start off your lab correctly.</div>
                         <p>
-                        <b>You should have received an email</b> <i>(“Thank you for your interest in the IBM Sandbox as a Service Hands—on Lab1: OpenShift Drone Application…”)</i> containing the <b>link to your repository</b>: 
-                        <span class="blue UPDATE"><a class="LABUSER_GIT_LINK" href="https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab" target="_blank">
-    https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab/</a></span>
+                        <b>You should have received an email</b> <i>(“Thank you for your interest in the IBM Hands—on Drone Lab1: OpenShift Drone Application…”)</i> containing the <b>link to your repository</b> as a .zip file. You will need to push the contents of this zip file to a repo on your own GitHub or GitHub Enterprise account. 
                         </p>
 
                         <div>
-                        <p>The repository that you have been provided contains a link to the instructions you see here.</p>
                         <p>
                             <span class="green">The instructions here will guide you through the lab step by step.</span>
-                        </p>
-                        <p>
-                            <b>Note</b>:
-                            <span class="inote">
-                            In case you have already accessed your repository <b>without</b> the email link, you will still be able to use these instructions to follow the lab. <span class="UPDATE">If you have not received an email and you do <b>not</b> see a new repository in
-                            your IBM GitHub account, please post "I haven't recieved an email and do not see a new GitHub repository in my account" in the <b>#2020gsc_ibmcloudsandbox_dronelab1</b> Slack channel.</span>
-                            </span>
                         </p>
                         </div>
                         
@@ -478,11 +421,8 @@
           </td>
           <td>
               <div class="step UPDATE">
-                In your browser window, switch to the <span class="magenta">GitHub tab</span>. <br/><i>(GSC-2020-lab-1/<span class="labnameHere UPDATE">YourLabName</span>-2020-lab: Repo for the GSC 2020 Lab 1) </i>
+                In your browser window, switch to the <span class="magenta">GitHub tab</span>. <br/><i>(Repo for the IEL 2020 Lab 1) </i>
               </div>
-              <p class="UPDATE">The email you received provided a direct link to your GitHub repository for this lab. You can <span class="blue">also</span> access it by selecting your repository on the left side menu of your available repositories, <b>GSC-2020-lab-1/<span class="magenta"><span class="labnameHere UPDATE">YourLabName</span></span>-2020-lab</b>.
-           </p>
-           <p class="UPDATE">Reminder: If you do <b>NOT</b> see this repository, please post a screenshot of your GitHub page with this left side menu, along with the message, <b>"I do not see my correct GitHub repository"</b> in the <b>Slack</b> channel (link the top right corner of the page).</p>
           </td>
          </tr>
         </tbody>
@@ -992,7 +932,7 @@
                 <div class="answer">
                     <img src="./img/2_3_1_error.png" class="sideImage_left_big"/><br/><br/>If you see "<b>Restricted Access: You don’t have access to this section due to cluster policy</b>" along with the error details, <i>"deploymentconfigs.apps.openshift.io is forbidden: User <span class="UPDATE">“IAM#...”</span> cannot list resource “deploymentconfigs” in API group “apps.openshift.io" in the namespace “default”</i>, make sure to select the <b>developer perspective</b> and that you are in the <b>correct project</b>. <span class="UPDATE">Your project should be  "<b><span class="labnameHere UPDATE">YourLabName</span>-2020-lab-1</b>".</span>
 
-                    <p>If you do <b>NOT</b> see a page similar to the one below, post a screenshot of your page in the <b>Slack</b> channel (link in the top right corner) along with the message, <b>"My Topology view in OpenShift doesn't match the screenshot in Step 2.3.1."</b></p>
+                    <p>If you do <b>NOT</b> see a page similar to the one below, send an email to gscgov@us.ibm.com with the message, <b>"My Topology view in OpenShift doesn't match the screenshot in Step 2.3.1."</b></p>
 
                 </div> 
 
@@ -1278,21 +1218,15 @@
             </p>
             <img src="./img/3_2_1.png" class="sideImage_right" />
             <p>
-                The first field in the <b>Import from Dockerfile</b> form asks for the <b>Git Repo URL*</b>. In Step 1, you made changes to your GitHub repository. Find the link to this URL by going back to your GitHub tab  (<span class="blue UPDATE"><a class="LABUSER_GIT_LINK" href="https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab" target="_blank">
-    https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab/</a></span>).
+                The first field in the <b>Import from Dockerfile</b> form asks for the <b>Git Repo URL*</b>. In Step 1, you made changes to your GitHub repository. Find the link to this URL by going back to your GitHub tab.
             </p>
 
         <div class="UPDATE">
             <p>You should have your GitHub repo still open in another tab.<br/>Return to this tab and click on the title at the top (<span class="labnameHere UPDATE">YourLabName</span>-2020-lab)</p>
 
               <div class="step UPDATE">
-                In your browser window, switch back to the <span class="magenta">GitHub tab</span>. <br/><i>(GSC-2020-lab-1/<span class="labnameHere UPDATE">YourLabName</span>-2020-lab: Repo for the GSC 2020 Lab 1) </i>
+                In your browser window, switch back to the <span class="magenta">GitHub tab</span>. <br/><i>(Repo for the IEL 2020 Lab 1) </i>
               </div>
-
-            <p>
-                If you had closed your GitHub tab, you can <span class="blue">also</span> go to <span class="blue UPDATE"><a class="LABUSER_GIT_LINK" href="https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab" target="_blank">
-    https://github.ibm.com/GSC-2020-lab-1/YourLabName-2020-lab/</a></span> in another tab.
-            </p>
 
             <p>You should see the GitHub repository you worked with in Step 1. You need to copy the <b>.git url</b> from your repository.</p>
             <div class="step">On your GitHub repo page, click on the green <span class="CloneOrDownload">Clone or download</span> button near the top right.</div><br/><br/>
@@ -1691,7 +1625,7 @@
             
             <div class="sectionTitle">4.2.2</div>
 
-            <p>You will be redirected to the <b>Build details</b> page where you should see a <b>Log stream</b> as shown below. This Log stream shows the build log in <b>real time</b>. For this lab, you are looking for <span class="blue">Cloning "https://github.ibm.com/GSC-2020-lab-1/</span><span class="magenta"><span class="labnameHere UPDATE">YourLabName</span></span><span class="blue">-2020-lab.git"</span>, which is an indicator that your Personal Access Token was step up <span class="magenta">correctly</span> in Step 3 and that your GitHub repository is successfully being cloned to the RedHat OpenShift instance.</p>
+            <p>You will be redirected to the <b>Build details</b> page where you should see a <b>Log stream</b> as shown below. This Log stream shows the build log in <b>real time</b>. For this lab, you are looking for <span class="blue">Cloning</span>, which is an indicator that your Personal Access Token was step up <span class="magenta">correctly</span> in Step 3 and that your GitHub repository is successfully being cloned to the RedHat OpenShift instance.</p>
             <p>If you do not see this log, <span class="UPDATE2"><b>scroll up or down</b> in the log file to</span> check carefully once more through the log stream <span class="UPDATE2">(it may be at the top or bottom of the log)</span>. If you still do not see it, you may need to go back to Step 3 and set up your Personal Access Token correctly.</p>
             <img class="standardImage" src="./img/4_2_2_A.png" /> <br /><br />    
             <p>On a successful build, you should see a log <b>similar</b> to this at the end: <span class="tblue">Successfully pushed image-registry.openshift-image-registry.svc:5000/<span class="UPDATE">...</span> Push successful".</span></p>
@@ -2081,8 +2015,9 @@
             Now that you have successfully completed all steps in the lab, move onto the final summary for closing thoughts.
             </p>
             <div class="finalStep">
-                <span class="yel">Post a screenshot</span><br/> of your custom remote drone console application<br/>
-in the Slack channel <a href="https://ibm.enterprise.slack.com/?redir=%2Fr-t75413889568%3Fredir%3D%252Fgantry%252Fauth%253Fapp%253Dclient%2526lc%253D1592853172%2526return_to%253D%25252Fclient%25252FT27C5S5GQ%25252FC015DBZ9YH0%2526teams%253D#/" target="_blank">#2020gsc_ibmcloudsandbox_dronelab1</a><br/> (Link also in the top right of this page)</div><br/><br/>
+                <span class="yel">Email a screenshot</span><br/> of your custom remote drone console application
+            </div>
+            <br/><br/>
             <div class="timeline">
             <table>
                 <tbody>
@@ -2135,7 +2070,7 @@ in the Slack channel <a href="https://ibm.enterprise.slack.com/?redir=%2Fr-t7541
     </div>
    <!--- Begin Summary -->
    <div id="summary" class="main">
-        <h2>GSC Drone Lab 1: Summary</h2>
+        <h2>IEL Drone Lab 1: Summary</h2>
         <div class="timeline">
                 <table>
                     <tbody>
@@ -2203,7 +2138,7 @@ in the Slack channel <a href="https://ibm.enterprise.slack.com/?redir=%2Fr-t7541
 
         </div>
         <div class="mid"><hr/>
-            Thank you for taking time to complete <b>GSC Drone Lab 1</b>. <span class="blue">Did you enjoy this lab?</span> Please leave a comment in this lab’s <span class="purple">Slack channel</span> (link in the top right) and let us know!<br/><br/> <span class="UPDATE">If you found this lab to be useful, remember that this Lab is the <b>first</b> a series of <b>Hands-on Labs</b> that will be available in the <b><i>near future</i></b> that will expand on the scenario and functionality that you completed today.</span><br/><br/>
+            Thank you for taking time to complete <b>IEL Drone Lab 1</b>.<br/><br/> <span class="UPDATE">If you found this lab to be useful, remember that this Lab is the <b>first</b> a series of <b>Hands-on Labs</b> that will be available in the <b><i>near future</i></b> that will expand on the scenario and functionality that you completed today.</span><br/><br/>
             <table class="futureLabs">
                 <tbody>
                     <tr class="header">
@@ -2239,10 +2174,7 @@ in the Slack channel <a href="https://ibm.enterprise.slack.com/?redir=%2Fr-t7541
         </div>
 
         <div class="mid">
-            The GSC Drone Lab 1 was created by the <b>IBM Global Solution Center Public Market</b> team in Dallas, TX.<br/>
-            Thank you to Romelia Flores, Catherine Chess and the SBaaS team, and Scott Knupp for their support on this lab.<br/><br/>
-            For more information on the <b>Global Solution Center</b>, what we do, and our pre-sales technical support for industry solutions, <br/>
-            visit <a href="https://ibm.biz/gscdallas" target="_blank">https://ibm.biz/gscdallas</a>.<br/> <br/> 
+            The IEL Drone Lab 1 was created by the <b>IBM Industry Engineering Lab PubFed</b> team in Dallas, TX.<br/><br/>
         </div>
    </div>
        </div>

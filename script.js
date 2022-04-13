@@ -247,16 +247,16 @@ function setLabName() {
   defaultValue = defaultValue.replace(/\./g, "-");
 
   confirmText.innerHTML =
-    "<b>" +
+    "Thank you for confirming <b>" +
     defaultValue +
-    "</b> is your labname. For your convenience, custom links and references in this lab have been updated! Please continue reading below.";
+    "</b> as your labname. For your convenience, custom links and references in this lab have been updated! Please continue reading below.";
   confirmText.style.display = "inline-block";
 
   for (var i = 0, len = allGitLinks.length | 0; i < len; i = (i + 1) | 0) {
     allGitLinks[i].href =
-      "https://github.ibm.com/GSC-2020-lab-1/" + defaultValue + "-2020-lab";
+      "#";
     allGitLinks[i].textContent =
-      "https://github.ibm.com/GSC-2020-lab-1/" + defaultValue + "-2020-lab";
+      "[Your GitHub or GitHub Enterprise git repo]";
   }
 
   for (var i = 0, len = labnames.length | 0; i < len; i = (i + 1) | 0) {
@@ -340,19 +340,15 @@ function tabsDisplayURL(tab) {
   switch (tab) {
     case "instructions":
       url.innerHTML =
-        "<a href='https://pages.github.ibm.com/dallas-gsc-gov/dronelab' target='_blank'>https://pages.github.ibm.com/dallas-gsc-gov/dronelab</a>";
+        "<a href='https://ielgov.github.io/dronelab1' target='_blank'>https://ielgov.github.io/dronelab1</a>";
       des.innerHTML =
         "- This current tab.<br/>- <b>Your browser should only have this tab open right now.</b><br/>- During the lab, you'll be clicking back to this tab often!<br/>- Now click on the [GitHub] tab to the right.";
       break;
     case "github":
       url.innerHTML =
-        "<a href='https://github.ibm.com/GSC-2020-lab-1/" +
-        defaultValue +
-        "-2020-lab' target='_blank'>https://github.ibm.com/GSC-2020-lab-1/" +
-        defaultValue +
-        "-2020-lab</a>";
+        "[Your git repository on GitHub on GitHub Enterprise]";
       des.innerHTML =
-        "- Your git repository was provided in an email. <br/> <b>- Click the URL link above to open this in a new tab.</b> Then come back to this tab. <br/> - You should now have 2 tabs in your browser. <br/> - Now click on the last tab [IBM Cloud].";
+        "- Your git repository was provided in an email as a link to .zip file. <br/> <b>- Once you've uploaded it as a repo on your GitHub or GitHub Enterprise account, have it open in another tab. </b> Then come back to this tab. <br/> - You should now have 2 tabs in your browser. <br/> - Now click on the last tab [IBM Cloud].";
       break;
     case "cloud":
       url.innerHTML =
